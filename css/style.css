@@ -1,0 +1,266 @@
+/* header */
+header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+   
+  .title {
+    margin-right: auto;
+  }
+
+  .menu-group {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+   
+  .menu-item {
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  /* トップ画像 */
+  #main-picture {
+    position: relative;
+  }
+
+  .textbox{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    color: white;
+  }
+  .text:nth-child(1) {
+    font-size: 24px;
+    margin-bottom: 36px;
+    font-weight: bold;
+  }
+  .text:nth-child(2) {
+    font-size: 24px;
+  }
+/* bodyの書式 */
+.main-title{
+  font-size: 24px;
+  text-align: center;
+  color: #ffd61a;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.second-title{
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+p{
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 40px;
+
+}
+  /* about */
+
+/* セクション全体をflexboxコンテナにすることで、子要素の画像を横並びにします */
+#four-pictures {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between; 
+  /* 画像間のスペースを均等に */
+  align-items: stretch; 
+  /* 画像の高さを均一にするため */
+  width: 100%; /* 画面幅いっぱいにセクションを広げる */
+  overflow: hidden; 
+  /* もし画像がコンテナを超える場合、はみ出す部分を非表示にする */
+}
+
+#four-pictures img {
+  width: 25%; /* 4枚の画像なので、それぞれの画像の幅を25%に設定 */
+  height: auto; /* 高さはオリジナルのアスペクト比を保持 */
+  object-fit: cover; 
+  /* 画像のアスペクト比を保ちつつ、指定されたボックスの中にフィットさせる */
+  flex-grow: 1;
+   /* 画像が均等にスペースを占めるようにする */
+}
+
+/* courseの下部分 */
+
+#course-tile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.course-features {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; 
+  /* 画像とテキストのボックスの上下中央揃え */
+}
+
+.course-features img {
+  width: 50%;   /* 画面を横に二分割するため、画像の幅を50%にする */
+  /* object-fit: cover; 画像のアスペクト比を保ちつつ、指定されたボックスの中にフィットさせる */
+}
+
+.course-content {
+  width: 50%;   /* 画面を横に二分割するため、テキストボックスの幅を50%にする */
+  display: flex;
+  flex-direction: column;  
+  /* 縦方向のレイアウトを整えるために、flexの方向を縦にする */
+  text-align: center;
+  justify-content: center; /* 水平方向の中央揃え */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.course-content-title {
+  font-size: 24px;    /* タイトルのフォントサイズを指定 */
+  margin-bottom: 40px; /* タイトルとボディテキストの間に余白を設定 */
+}
+
+.course-content-body {
+  font-size: 16px;
+}
+
+/* news*/
+
+#news{
+  display: flex;
+  justify-content: center;
+  gap: 30px ;
+}
+
+.news-box{
+  width: 300px;
+  margin-bottom: 60px;
+}
+
+.nesw-box img{
+  width: 100%;
+}
+
+.date{
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.more-button{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  width: 300px;
+  height: 60px;
+  font-size: 16px;
+  border: none;
+  background-color: #ffd61a;
+  margin-bottom: 60px;
+}
+
+button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);  /* ホバー時に影を追加する */
+}
+
+/* access */
+
+#access{
+  background-color: #fafafa;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 60px;
+}
+
+table{
+  margin: 0 auto;
+}
+
+td{
+  padding: 20px; /* 全方向に20pxのパディングを追加 */
+}
+
+/* contact */
+
+#form table {
+  border-collapse: collapse;  /* セルの境界線を連結する */
+}
+
+/* すべてのセルに上下の境界線を追加 */
+#form td, #form th {
+  border-top: 1px solid #000;    /* 上の境界線 */
+  border-bottom: 1px solid #000; /* 下の境界線 */
+  padding: 8px 8%;          /* セルの内部余白 */
+}
+
+#form tr{
+  height: 36px;
+}
+
+#form td{
+  width: 240px;
+  padding-left: 16px;
+  padding-right: 64px;
+}
+
+#form th{
+  width: 328px;
+}
+
+.questions{
+  text-align: left;
+  padding-left: 8px;
+}
+
+/* contact button */
+.center {
+  margin-top: 30px;
+  margin-bottom: 140;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* viewportの高さに合わせる */
+
+}
+
+.submit-button {
+    background-color: rgb(255, 179, 0); /* 背景色を黄色に */
+    color: white;             /* 文字色を白に */
+    padding: 10px 20px;       /* 内側の余白（上下10px、左右20px） */
+    border: none;             /* 枠線を消す */
+    cursor: pointer;          /* マウスを乗せるとポインターになる */
+    font-size: 16px;          /* 文字の大きさ */
+    border-radius: 4px;       /* 角を少し丸くする */
+}
+
+.submit-button:hover {
+    background-color: #ffd61a; /* マウスオーバー時の背景色を濃いオレンジに */
+}
+
+  /* フッター */
+  .footer-box{
+    background-color:#707070; /* 背景色を黄色に */
+    color: white;             /* 文字色を白に */
+    padding: 30px;       /* 内側の余白（上下10px、左右20px） */
+    cursor: pointer;          /* マウスを乗せるとポインターになる */
+    font-size: 16px;          /* 文字の大きさ */
+  }
+
+  .copyright{
+    text-align: center;
+  }
